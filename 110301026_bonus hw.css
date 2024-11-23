@@ -1,0 +1,85 @@
+body {
+  font-family: sans-serif, Arial, serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 50px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 20px; 
+}
+
+label {
+  width: 80px; 
+  font-weight: bold;
+}
+
+
+.input2, .input3 {
+  float: left;
+  display: flex;
+  align-items: center; 
+  width: 50%; 
+  flex: 1;
+}
+
+.input2 label, .input3 label {
+  width: auto;
+  margin-right: 40px; 
+}
+
+.input2 input, .input3 input {
+  width: calc(100% - 80px); 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#input1, #input4, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+img {
+  width: 50%;
+  height: auto;
+  border-radius: 8px;
+}
